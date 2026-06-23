@@ -1,0 +1,101 @@
+#ifndef TILES
+#define TILES
+
+#include <Gamebuino-Meta.h>
+
+enum class Tile : byte {
+  EMPTY_TYPE,
+  DOOR_TYPE,
+  FLOOR_TYPE,
+  START_TYPE,
+  DESTINATION_TYPE,
+  JAR_TYPE,
+  PANEL_TYPE,
+  CLOSED_CHEST_TYPE,
+  OPENED_CHEST_TYPE,
+  //MOB
+  SLIME_TYPE,
+  //WALL
+  WALL_TYPE ,
+  W01_TYPE ,
+  W02_TYPE ,
+  W03_TYPE ,
+  W04_TYPE ,
+  W05_TYPE ,
+  W06_TYPE ,
+  W07_TYPE ,
+  W08_TYPE ,
+  W09_TYPE ,
+  W10_TYPE ,
+  W11_TYPE ,
+  W12_TYPE ,
+  W13_TYPE ,
+  W14_TYPE ,
+  W15_TYPE ,
+  W16_TYPE ,
+  W17_TYPE ,
+  W18_TYPE ,
+  W19_TYPE ,
+  W20_TYPE ,
+  W21_TYPE ,
+  W22_TYPE ,
+  W23_TYPE ,
+  W24_TYPE ,
+  W25_TYPE ,
+  W26_TYPE ,
+  W27_TYPE ,
+  W28_TYPE ,
+  W29_TYPE ,
+  W30_TYPE ,
+  W31_TYPE ,
+  W32_TYPE ,
+  W33_TYPE ,
+  W34_TYPE ,
+  W35_TYPE ,
+  W36_TYPE ,
+  W37_TYPE ,
+  W38_TYPE ,
+  W39_TYPE ,
+  W40_TYPE ,
+  W41_TYPE ,
+  W42_TYPE ,
+  W43_TYPE ,
+  W44_TYPE ,
+  W45_TYPE ,
+  W46_TYPE ,
+  W47_TYPE ,
+  W48_TYPE ,
+  W49_TYPE,
+  //DECORATION
+  LEFT_TORCH_TYPE,
+  RIGHT_TORCH_TYPE,
+  CARPET_TYPE,
+  CARPET_WALL_TYPE,
+  DIRT1_TYPE,
+  DIRT2_TYPE,
+  DIRT3_TYPE,
+  DIRT4_TYPE,
+  GRASS1_TYPE,
+  GRASS2_TYPE,
+  GRASS3_TYPE,
+  GRASS4_TYPE,
+  CHEST_UL_TYPE,
+  CHEST_UR_TYPE,
+  CHEST_BL_TYPE,
+  CHEST_BR_TYPE,
+  //MOB
+  BAT_TYPE,
+  SHOGGOTH_TYPE,
+  GHOST_TYPE,
+  SCORPION_TYPE,
+  GOLEM_TYPE,
+  DEMON_TYPE,
+};
+
+bool isWall(Tile tile);
+bool isSolid(Tile tile);
+bool isInteractive(Tile tile);
+bool isVisible(Tile tile);
+bool isMob(Tile tile);
+
+#endif
